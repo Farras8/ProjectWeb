@@ -8,7 +8,7 @@
 }
 body{
     color: black;
-    min-height: 1700px;
+    min-height: 1000px;
     background-color: rgb(233, 237, 240);
 }
 nav .logo{
@@ -48,6 +48,37 @@ nav .Navbar a:hover, nav .Navbar a.active{
     color: rgb(228, 223, 223);
     background-color: rgb(19, 18, 18);
     cursor: pointer;
+}
+.menu h2{
+    text-align: center;
+    color:rgb(78, 76, 76) ;
+    font-size: 2em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+.menu .cardflex{
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+    flex-wrap:wrap ;
+}
+.card{
+    height: 350px;
+    box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+.card .cardbody{
+    text-align: center;
+}
+.card .cardbody h4{
+    font-size: 1.25em;
+    font-weight: 400;
+    line-height: 1.5em;
+    margin-bottom: 0.5em;
+}
+img{
+    height: 270px;
+    width: 400px;
 }
 @media screen and (max-width: 1366px){
     html{
