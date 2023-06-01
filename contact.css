@@ -1,0 +1,107 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+body{
+    color: black;
+    min-height: 1700px;
+    background-color: rgb(233, 237, 240);
+}
+nav .logo{
+    font-size: 2rem;
+    font-weight: 900;
+}
+#menu{
+    display: none;
+    color: black;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 6%;
+    background-color:rgba(198, 201, 204, 0.7);
+    border-bottom: 1px solid #9e9a9a;
+    top: 0;
+    position: sticky;
+    z-index: 5000;
+}
+nav .Navbar li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 1rem;
+}
+
+nav .Navbar  a{   
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: rgb(14, 13, 13);
+}
+
+nav .Navbar a:hover, nav .Navbar a.active{
+    font-weight: bold;
+    color: rgb(228, 223, 223);
+    background-color: rgb(19, 18, 18);
+    cursor: pointer;
+}
+@media screen and (max-width: 1366px){
+    html{
+        font-size: 80%;
+    }
+}
+@media screen and (max-width: 768px){
+    html{
+        font-size: 70%;
+    }
+    #menu{
+        display: block;
+    }
+    nav .Navbar {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: rgba(198, 201, 204, 0.7);
+        width: 20rem;
+        height: 100vh;
+        transition: 0.5s;
+    }
+    nav .Navbar.active{
+        right: 0;
+    }
+    nav .Navbar a{
+        color: black;
+        display: block;
+        margin: 1.75rem;
+        padding: 0.5rem;
+    }
+}
+@media screen and (max-width: 450px){
+    html{
+        font-size: 50%;
+    }
+    #menu{
+        display: block;
+    }
+    nav .Navbar {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: rgba(198, 201, 204, 0.7);
+        width: 20rem;
+        height: 100vh;
+    }
+    nav .Navbar.active{
+        right: 0;
+    }
+    nav .Navbar a{
+        color: black;
+        display: block;
+        margin: 1.75rem;
+        padding: 0.5rem;
+    }
+}
