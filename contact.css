@@ -8,18 +8,26 @@
 }
 body{
     color: black;
-    min-height: 1600px;
     background-color: rgb(233, 237, 240);
 }
 nav .logo{
     font-size: 2rem;
     font-weight: 900;
 }
+.cmenu{
+    display: flex;
+    gap: 2em;
+}
+#shoppingcart{
+    color: black;
+}
 #menu{
     display: none;
     color: black;
 }
-
+#shoppingcart:hover{
+    transform: scale(1.1);
+}
 nav{
     display: flex;
     justify-content: space-between;
@@ -27,8 +35,11 @@ nav{
     padding: 1.2rem 6%;
     background-color:rgba(198, 201, 204, 0.7);
     border-bottom: 1px solid #9e9a9a;
+    position: fixed;
     top: 0;
-    position: sticky;
+    left: 0;
+    right: 0;
+    z-index: 5000;
     z-index: 5000;
 }
 nav .Navbar li {
@@ -49,11 +60,61 @@ nav .Navbar a:hover, nav .Navbar a.active{
     background-color: rgb(19, 18, 18);
     cursor: pointer;
 }
+.shoppingcart{
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    height: 100vh;
+    width: 30rem;
+    padding:0 1.5rem;
+    background-color:rgba(198, 201, 204, 0.9);
+    transition: 1s;
+}
+.shoppingcart img{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+}
+.shoppingcart .cartproduct {
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px dashed #666;
+    position: relative;
+  }
+.shoppingcart.active{
+    right: 0;
+}
+.shoppingcart .productdetail{
+    margin-right: 9em;
+}
+.shoppingcart h3{
+    font-size: 1.25em;
+    font-weight: 500;
+}
+.shoppingcart .price{
+    font-size: 1em;
+    font-weight: 400;
+}
+.shoppingcart #trash{
+    color: black;
+}
+.shoppingcart #trash:hover{
+    transform: scale(1.1);
+}
+.shoppingcart .totalprice{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 500;
+}
 .contactus{
     padding:  5rem 7% 1.4rem;
     display: flex;
     justify-content: center;
     gap: 6em;
+    margin-top: 4em;
 }
 .leftsidecontact h2{
     text-align: center;
@@ -147,6 +208,29 @@ nav .Navbar a:hover, nav .Navbar a.active{
     font-size: 16px;
     max-height: 200px;
   }
+  .location{
+    padding:  5rem 7% 1.4rem;
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+  }
+  .location h2{
+    text-align: center;
+    color:rgb(78, 76, 76) ;
+    font-size: 2.5em;
+    margin-bottom: 1em;
+  }
+  .location iframe{
+    width: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  footer{
+    padding: 1em;
+    background-color:rgb(198, 201, 204 );
+  }
+  footer h4{
+    text-align: center;
+  }
 @media screen and (max-width: 1366px){
     html{
         font-size: 80%;
@@ -154,6 +238,10 @@ nav .Navbar a:hover, nav .Navbar a.active{
     .form{
         width: 400px;
     }
+    .location iframe{
+        width: 350px;
+    }
+
 }
 @media screen and (max-width: 768px){
     html{
@@ -163,7 +251,7 @@ nav .Navbar a:hover, nav .Navbar a.active{
         display: block;
     }
     #menu:hover{
-        background-color: #9e9a9a;
+        transform: scale(1.1);
     }
     nav .Navbar {
         position: absolute;
@@ -189,6 +277,12 @@ nav .Navbar a:hover, nav .Navbar a.active{
     .form{
         width: 300px;
     }
+    .location{
+        flex-wrap: wrap;
+    }
+    .location iframe{
+        width: 300px;
+    }
 }
 @media screen and (max-width: 450px){
     html{
@@ -198,7 +292,7 @@ nav .Navbar a:hover, nav .Navbar a.active{
         display: block;
     }
     #menu:hover{
-        background-color: #9e9a9a;
+        transform: scale(1.1);
     }
     nav .Navbar {
         position: absolute;
@@ -222,5 +316,11 @@ nav .Navbar a:hover, nav .Navbar a.active{
     }
     .form{
         width: 250px;
+    }
+    .location{
+        flex-wrap: wrap;
+    }
+    .location iframe{
+        width: 300px;
     }
 }

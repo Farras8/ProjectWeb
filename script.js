@@ -11,6 +11,20 @@ document.addEventListener('click', (event) => {
         navbar.classList.remove('active');
     }
 });
+
+/* shopping cart */
+let shopbutton = document.querySelector('#shoppingcart');
+let shopbody = document.querySelector('.shoppingcart');
+shopbutton.onclick = (event) => {
+    event.preventDefault();
+    shopbody.classList.toggle('active');
+};
+
+document.addEventListener('click', (event) => {
+  if (!shopbody.contains(event.target) && !shopbutton.contains(event.target)) {
+      shopbody.classList.remove('active');
+  }
+});
 /* form validation */
 
 const form = document.getElementById('registration-form');
