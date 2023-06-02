@@ -91,6 +91,9 @@ nav .Navbar a:hover, nav .Navbar a.active{
     #menu{
         display: block;
     }
+    #menu:hover{
+        background-color: #9e9a9a;
+    }
     nav .Navbar {
         position: absolute;
         top: 100%;
@@ -117,6 +120,9 @@ nav .Navbar a:hover, nav .Navbar a.active{
     }
     #menu{
         display: block;
+    }
+    #menu:hover{
+        background-color: #9e9a9a;
     }
     nav .Navbar {
         position: absolute;

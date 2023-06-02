@@ -49,11 +49,13 @@ nav .Navbar a:hover, nav .Navbar a.active{
     background-color: rgb(19, 18, 18);
     cursor: pointer;
 }
+.menu{
+    padding: 3rem 5%;
+}
 .menu h2{
     text-align: center;
     color:rgb(78, 76, 76) ;
-    font-size: 2em;
-    margin-top: 2em;
+    font-size: 3em;
     margin-bottom: 1em;
 }
 .menu .cardflex{
@@ -71,15 +73,54 @@ nav .Navbar a:hover, nav .Navbar a.active{
     text-align: center;
 }
 .card .cardbody h4{
-    font-size: 1.25em;
-    font-weight: 400;
+    font-size: 1.35em;
+    font-weight: 500;
     line-height: 1.5em;
     margin-bottom: 0.5em;
 }
+.card .cardbody p{
+    font-size: 1em;
+    font-weight: 400;
+}
+.card .cardbody p span{
+    margin-left: 1em;
+    font-size: 0.7em;
+    font-weight: 300;
+    text-decoration: line-through;
+}
+
 img{
     height: 270px;
     width: 400px;
 }
+.addcart {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: 0.5s;
+    opacity: 0;
+  }
+  
+  .card:hover .addcart {
+    opacity: 1;
+  }
+  
+  .addcart:hover {
+    background-color: #3e8e41;
+  }
+  .card:hover img {
+    transform: scale(1.1);
+    transition: 0.3s;
+  }
+
 @media screen and (max-width: 1366px){
     html{
         font-size: 80%;
@@ -91,6 +132,9 @@ img{
     }
     #menu{
         display: block;
+    }
+    #menu:hover{
+        background-color: #9e9a9a;
     }
     nav .Navbar {
         position: absolute;
@@ -117,6 +161,9 @@ img{
     }
     #menu{
         display: block;
+    }
+    #menu:hover{
+        background-color: #9e9a9a;
     }
     nav .Navbar {
         position: absolute;
