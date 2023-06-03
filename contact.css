@@ -144,7 +144,6 @@ nav .Navbar a:hover, nav .Navbar a.active{
 }
 .form {
     width: 500px;
-    margin: auto;
     padding: 20px;
     background-color: #fff;
     border-radius: 5px;
@@ -239,7 +238,7 @@ nav .Navbar a:hover, nav .Navbar a.active{
         width: 400px;
     }
     .location iframe{
-        width: 350px;
+        width: 400px;
     }
 
 }
