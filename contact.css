@@ -112,7 +112,7 @@ nav .Navbar a:hover, nav .Navbar a.active{
 .contactus{
     padding:  5rem 7% 1.4rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 6em;
     margin-top: 4em;
 }
@@ -209,10 +209,10 @@ nav .Navbar a:hover, nav .Navbar a.active{
     max-height: 200px;
   }
   .location{
-    padding:  5rem 7% 1.4rem;
+    padding:  6rem 7% 1.4rem;
     display: flex;
-    justify-content: center;
-    gap: 5em;
+    justify-content: space-between;
+    gap: 6em;
   }
   .location h2{
     text-align: center;
@@ -272,12 +272,14 @@ nav .Navbar a:hover, nav .Navbar a.active{
         padding: 0.5rem;
     }
     .contactus{
+        justify-content: center;
         flex-wrap: wrap;
     }
     .form{
         width: 300px;
     }
     .location{
+        justify-content: center;
         flex-wrap: wrap;
     }
     .location iframe{
@@ -321,6 +323,6 @@ nav .Navbar a:hover, nav .Navbar a.active{
         flex-wrap: wrap;
     }
     .location iframe{
-        width: 300px;
+        width: 250px;
     }
 }

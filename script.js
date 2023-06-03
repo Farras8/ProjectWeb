@@ -100,3 +100,4 @@ nameInput.addEventListener('blur', validateName);
 emailInput.addEventListener('blur', validateEmail);
 phoneInput.addEventListener('blur', validatePhone);
 addressInput.addEventListener('blur', validateAddress);
+
