@@ -40,7 +40,6 @@ nav{
     left: 0;
     right: 0;
     z-index: 5000;
-    z-index: 5000;
 }
 nav .Navbar li {
     display: inline-block;
@@ -181,7 +180,85 @@ img{
     transform: scale(1.1);
     transition: 0.3s;
   }
+  .review{
+    padding: 3rem 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+    .review h2{
+        color:rgb(78, 76, 76) ;
+        font-size: 3em;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+  .review span{
+    background-color: #666;
+    border-radius: 10%;
+    padding: 10px;
+    color: rgb(211, 211, 211);
+  }
+  .reviewbody{
+    display: flex;
+    margin: 2em 5%;
+    gap: 3em;
+  }
+  .reviewcontent{
+    text-align: justify;
+    box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.2);
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+  }
+  .image-content{
+    display: flex;
+    justify-content: space-between;
+    gap: 4em;
+    margin-bottom: 1em;
+  }
+  .imagec1{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+  }
+  .detailcontent h4{
+    text-align: center;
+    font-size: 1.45em;
+    font-weight: 700;
+    line-height: 1.5em;
+    margin-bottom: 0.5em;
+  }
+  .stars{
+    display: flex;
+    gap: 0.2em;
+  }
+  .star{
+    color: black;
+  }
+  .message{
+    color: black;
+  }
+  .review-menu-name{
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 1em;
+  }
+  .review-menu-name h3{
+    font-size: 1.35em;
+    font-weight: 500;
+    line-height: 1.5em;
+  }
+  .reviewcontent p{
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.6em;
+  }
   footer{
+    position: relative;
+    right: 0;
+    left: 0;
+    bottom: 0;
     padding: 1em;
     background-color:rgb(198, 201, 204 );
   }
@@ -191,6 +268,9 @@ img{
 @media screen and (max-width: 1366px){
     html{
         font-size: 80%;
+    }
+    .reviewbody{
+        flex-direction: column;
     }
 }
 @media screen and (max-width: 768px){
@@ -221,6 +301,9 @@ img{
         margin: 1.75rem;
         padding: 0.5rem;
     }
+    .reviewbody{
+        flex-direction: column;
+    }
 }
 @media screen and (max-width: 450px){
     html{
@@ -248,5 +331,8 @@ img{
         display: block;
         margin: 1.75rem;
         padding: 0.5rem;
+    }
+    .reviewbody{
+        flex-direction: column;
     }
 }
