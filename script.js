@@ -81,7 +81,7 @@ function validatePhone() {
 function validateAddress() {
   const address = addressInput.value.trim();
   if (address === '') {
-    showError(addressInput, 'Address is required');
+    showError(addressInput, 'Message is required');
   } else {
     hideError(addressInput);
   }

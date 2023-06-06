@@ -6,6 +6,7 @@
     outline: none;
     border: none;
 }
+
 body{
     color: black;
     background-color: rgb(233, 237, 240);
@@ -98,10 +99,10 @@ nav .Navbar a:hover, nav .Navbar a.active{
     font-size: 1em;
     font-weight: 400;
 }
-.shoppingcart #trash{
+.shoppingcart .trash{
     color: black;
 }
-.shoppingcart #trash:hover{
+.shoppingcart .trash:hover{
     transform: scale(1.1);
 }
 .shoppingcart .totalprice{
