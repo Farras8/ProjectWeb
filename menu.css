@@ -118,16 +118,17 @@ nav .Navbar a:hover, nav .Navbar a.active{
     margin-top: 2em;
     margin-bottom: 1em;
 }
-.menu .cardflex{
+.cardflex{
     display: flex;
     justify-content: center;
     gap: 3em;
     flex-wrap:wrap ;
 }
 .card{
-    height: 350px;
     box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.2);
     position: relative;
+    height: auto;
+    width: auto;
 }
 .card .cardbody{
     text-align: center;
@@ -150,8 +151,8 @@ nav .Navbar a:hover, nav .Navbar a.active{
 }
 
 img{
-    height: 270px;
-    width: 400px;
+    height: 250px;
+    width: 300px;
 }
 .addcart {
     position: absolute;
@@ -177,7 +178,7 @@ img{
     background-color: #3e8e41;
   }
   .card:hover img {
-    transform: scale(1.1);
+    transform: scale(0.9);
     transition: 0.3s;
   }
   .review{

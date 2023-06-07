@@ -31,7 +31,8 @@ const form = document.getElementById('registration-form');
 const nameInput = document.getElementById('name');
 const emailInput = document.getElementById('email');
 const phoneInput = document.getElementById('phone');
-const addressInput = document.getElementById('address');
+const messageInput = document.getElementById('message');
+const submitButton = document.getElementById('submit-button');
 
 function showError(input, message) {
   const errorSpan = document.getElementById(`${input.id}-error`);
@@ -71,19 +72,19 @@ function validatePhone() {
   const phone = phoneInput.value.trim();
   if (phone === '') {
     showError(phoneInput, 'Phone number is required');
-  } else if (!/^\d{10}$/.test(phone)) {
-    showError(phoneInput, 'Phone number must be a 10-digit number');
+  } else if (!/^\d{12}$/.test(phone)) {
+    showError(phoneInput, 'Phone number must be a 12-digit number');
   } else {
     hideError(phoneInput);
   }
 }
 
-function validateAddress() {
-  const address = addressInput.value.trim();
-  if (address === '') {
-    showError(addressInput, 'Message is required');
+function validateMessage() {
+  const message = messageInput.value.trim();
+  if (message === '') {
+    showError(messageInput, 'Message is required');
   } else {
-    hideError(addressInput);
+    hideError(messageInput);
   }
 }
 
@@ -92,12 +93,18 @@ function validateForm(event) {
   validateName();
   validateEmail();
   validatePhone();
-  validateAddress();
+  validateMessage();
+
+  if (!document.querySelectorAll('.error').length) {
+    form.reset();
+  }
 }
 
 form.addEventListener('submit', validateForm);
+submitButton.addEventListener('click', validateForm);
 nameInput.addEventListener('blur', validateName);
 emailInput.addEventListener('blur', validateEmail);
 phoneInput.addEventListener('blur', validatePhone);
-addressInput.addEventListener('blur', validateAddress);
+messageInput.addEventListener('blur', validateMessage);
+
 
