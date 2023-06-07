@@ -256,10 +256,6 @@ img{
     line-height: 1.6em;
   }
   footer{
-    position: relative;
-    right: 0;
-    left: 0;
-    bottom: 0;
     padding: 1em;
     background-color:rgb(198, 201, 204 );
   }

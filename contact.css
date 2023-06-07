@@ -40,7 +40,6 @@ nav{
     left: 0;
     right: 0;
     z-index: 5000;
-    z-index: 5000;
 }
 nav .Navbar li {
     display: inline-block;

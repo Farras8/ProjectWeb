@@ -114,46 +114,50 @@ nav .Navbar a:hover, nav .Navbar a.active{
     padding: 5rem 7% 1.4rem;
     text-align: center;
     font-size: 1.5rem;
-    margin-bottom: 3rem;
-    margin-top: 2em;
+    margin-top: 3em;
 }
-.aboutush2 {
+.AboutUs h2 {
     color: rgb(78, 76, 76);
     padding-bottom: 1em;
     font-size: 2em;
 }
-.AboutUs .contentABoutUs{
+.contentABoutUs{
+    margin-top: 2em;
     display: flex;
+    justify-content: center;
+    gap: 4em;
 }
-.AboutUs .contentABoutUs .imageAboutus{
-    flex: 1 1 35rem;
+.imageAboutus img{
+    width: 500px;
+    height: 450px;
 }
-.AboutUs .contentABoutUs .imageAboutus img{
-    width: 100%;
-}
-.AboutUs .contentABoutUs .contentImage{
+.contentImage{
     text-align: justify;
-    flex: 1 1 30rem;
     padding: 0 1rem;
 }
-
-.AboutUs .contentABoutUs .contentImage h3{
+.contentImage h3{
+    text-align: center;
+}
+.contentImage h3{
     color: rgb(78, 76, 76);
     margin-bottom: 1em;
     font-size: 1.5em;
 }
-.AboutUs .contentABoutUs .contentImage p{
+ .contentImage p{
     color:rgb(48, 44, 44);
     font-size: 0.9em;
     font-weight: 300;
 }
-.AboutUs .founders h2{
+.founders{
+    margin-bottom: 2em;
+}
+ .founders h2{
     color:rgb(78, 76, 76) ;
     font-size: 2em;
     margin-top: 4em;
     margin-bottom: 1em;
 }
-.AboutUs .founders .content {
+ .founders .content {
     display: flex;
     justify-content: center;
     gap: 4em;
@@ -227,6 +231,20 @@ nav .Navbar a:hover, nav .Navbar a.active{
     html{
         font-size: 80%;
     }
+    .imageAboutus img{
+        width: 400px;
+        height: 400px;
+    }
+
+}
+@media screen and (max-width: 1200px){
+    html{
+        font-size: 70%;
+    }
+    .imageAboutus img{
+        width: 300px;
+        height: 300px;
+    }
 }
 @media screen and (max-width: 768px){
     html{
@@ -262,6 +280,10 @@ nav .Navbar a:hover, nav .Navbar a.active{
         height: 30rem;
         object-fit: cover;
     }
+    .imageAboutus img{
+        width: 400px;
+        height: 300px;
+    }
 }
 @media screen and (max-width: 450px){
     html{
@@ -295,5 +317,9 @@ nav .Navbar a:hover, nav .Navbar a.active{
     }.AboutUs .contentABoutUs .imageAboutus img{
         height: 30rem;
         object-fit: cover;
+    }
+    .imageAboutus img{
+        width: 300px;
+        height: 200px;
     }
 }
