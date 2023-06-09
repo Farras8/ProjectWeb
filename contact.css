@@ -116,6 +116,9 @@ nav .Navbar a:hover, nav .Navbar a.active{
     gap: 6em;
     margin-top: 4em;
 }
+.leftsidecontact{
+    max-width: 600px;
+}
 .leftsidecontact h2{
     text-align: center;
     color:rgb(78, 76, 76) ;
@@ -124,6 +127,14 @@ nav .Navbar a:hover, nav .Navbar a.active{
 }
 .leftsidecontact p{
     margin-bottom: 2em;
+    text-align: center;
+}
+.leftsidecontact h4{
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 1.25em;
+    font-weight: 600;
+    color: rgb(78, 76, 76) ;
 }
 .leftsidecontact .icon{
    display: flex;
@@ -142,6 +153,7 @@ nav .Navbar a:hover, nav .Navbar a.active{
 .leftsidecontact #twitter:hover{
     transform: scale(1.2);
 }
+
 .form {
     width: 500px;
     padding: 20px;

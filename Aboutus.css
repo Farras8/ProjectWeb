@@ -135,18 +135,11 @@ nav .Navbar a:hover, nav .Navbar a.active{
     text-align: justify;
     padding: 0 1rem;
 }
-.contentImage h3{
-    text-align: center;
-}
-.contentImage h3{
-    color: rgb(78, 76, 76);
-    margin-bottom: 1em;
-    font-size: 1.5em;
-}
  .contentImage p{
     color:rgb(48, 44, 44);
     font-size: 0.9em;
     font-weight: 300;
+    line-height: 2em;
 }
 .founders{
     margin-bottom: 2em;
