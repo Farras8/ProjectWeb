@@ -120,7 +120,8 @@ nav .Navbar a:hover, nav .Navbar a.active{
     background-position: center;
 }
 .main .content{
-    padding: 1.2rem 6%;
+    margin-top: 7em;
+    padding: 1.3rem 6%;
     max-width: 45rem;
 }
 .main .content h1{
