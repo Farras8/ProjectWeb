@@ -10,9 +10,9 @@ body{
     color: black;
     background-color: rgb(233, 237, 240);
 }
-nav .logo{
-    font-size: 2rem;
-    font-weight: 900;
+.imglogo{
+    height: 70px;
+    width: 80px;
 }
 .cmenu{
     display: flex;

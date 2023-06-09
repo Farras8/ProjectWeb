@@ -10,9 +10,9 @@ body{
     color: black;
     background-color: rgb(233, 237, 240);
 }
-nav .logo{
-    font-size: 2rem;
-    font-weight: 900;
+.imglogo{
+    height: 70px;
+    width: 80px;
 }
 .cmenu{
     display: flex;
@@ -154,7 +154,7 @@ nav .Navbar a:hover, nav .Navbar a.active{
   }
   
   .main .content .buttonBuy:hover {
-    transform: scale(0.8);
+    background-color: black;
     cursor: pointer;
   }
 

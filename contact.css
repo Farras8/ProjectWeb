@@ -10,9 +10,9 @@ body{
     color: black;
     background-color: rgb(233, 237, 240);
 }
-nav .logo{
-    font-size: 2rem;
-    font-weight: 900;
+.imglogo{
+    height: 70px;
+    width: 80px;
 }
 .cmenu{
     display: flex;
@@ -219,6 +219,19 @@ nav .Navbar a:hover, nav .Navbar a.active{
     font-size: 16px;
     max-height: 200px;
   }
+  .ourlocation{
+    max-width: 600px;
+  }
+  .ourlocation h2{
+    text-align: center;
+    color:rgb(78, 76, 76) ;
+    font-size: 2.5em;
+    margin-bottom: 1em;
+}
+.ourlocation p{
+    margin-bottom: 2em;
+    text-align: center;
+}
   .location{
     padding:  6rem 7% 1.4rem;
     display: flex;

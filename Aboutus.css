@@ -11,9 +11,9 @@ body{
     color: black;
     background-color: rgb(233, 237, 240);
 }
-nav .logo{
-    font-size: 2rem;
-    font-weight: 900;
+.imglogo{
+    height: 70px;
+    width: 80px;
 }
 .cmenu{
     display: flex;
@@ -128,8 +128,8 @@ nav .Navbar a:hover, nav .Navbar a.active{
     gap: 4em;
 }
 .imageAboutus img{
-    width: 500px;
-    height: 550px;
+    width: 550px;
+    height: 600px;
 }
 .contentImage{
     text-align: justify;
