@@ -40,8 +40,7 @@ nav{
     top: 0;
     left: 0;
     right: 0;
-    z-index: 5000;
-    z-index: 5000;
+    z-index: 9999;
 }
 nav .Navbar li {
     display: inline-block;
@@ -130,7 +129,7 @@ nav .Navbar a:hover, nav .Navbar a.active{
 }
 .imageAboutus img{
     width: 500px;
-    height: 450px;
+    height: 550px;
 }
 .contentImage{
     text-align: justify;
