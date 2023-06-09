@@ -26,7 +26,7 @@ nav .logo{
     color: black;
 }
 #shoppingcart:hover{
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 nav{
     display: flex;
@@ -57,6 +57,7 @@ nav .Navbar a:hover, nav .Navbar a.active{
     font-weight: bold;
     color: rgb(228, 223, 223);
     background-color: rgb(19, 18, 18);
+    padding: 4px;
     cursor: pointer;
 }
 .shoppingcart{
@@ -129,10 +130,10 @@ nav .Navbar a:hover, nav .Navbar a.active{
    justify-content: center;
    gap: 2em;
 }
-#linkedin, #instagram, #twitter{
+#facebook, #instagram, #twitter{
     color: black;
 }
-.leftsidecontact #linkedin:hover{
+.leftsidecontact #facebook:hover{
     transform: scale(1.2);
 }
 .leftsidecontact #instagram:hover{
@@ -226,8 +227,14 @@ nav .Navbar a:hover, nav .Navbar a.active{
     padding: 1em;
     background-color:rgb(198, 201, 204 );
   }
-  footer h4{
-    text-align: center;
+  .bottom-bar{
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    color:  #333;
+    font-size: 1.25em;
+    font-weight: 500;
   }
 @media screen and (max-width: 1366px){
     html{
@@ -282,7 +289,7 @@ nav .Navbar a:hover, nav .Navbar a.active{
         display: block;
     }
     #menu:hover{
-        transform: scale(1.1);
+        transform: scale(1.2);
     }
     nav .Navbar {
         position: absolute;
@@ -325,7 +332,7 @@ nav .Navbar a:hover, nav .Navbar a.active{
         display: block;
     }
     #menu:hover{
-        transform: scale(1.1);
+        transform: scale(1.2);
     }
     nav .Navbar {
         position: absolute;

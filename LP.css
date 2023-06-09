@@ -26,7 +26,7 @@ nav .logo{
     color: black;
 }
 #shoppingcart:hover{
-    transform: scale(1.1);
+transform: scale(1.2);
 }
 nav{
     display: flex;
@@ -57,6 +57,7 @@ nav .Navbar a:hover, nav .Navbar a.active{
     font-weight: bold;
     color: rgb(228, 223, 223);
     background-color: rgb(19, 18, 18);
+    padding: 4px;
     cursor: pointer;
 }
 .shoppingcart{
@@ -136,6 +137,26 @@ nav .Navbar a:hover, nav .Navbar a.active{
     color: rgb(247, 242, 242);
     mix-blend-mode: difference;
 }
+.main .content .buttonBuy {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: rgba(198, 201, 204, 0.9);
+    border-radius: 2rem;
+    transition: transform 0.3s ease-in-out;
+  }
+  .buttonBuy a{
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .main .content .buttonBuy:hover {
+    transform: scale(0.8);
+    cursor: pointer;
+  }
 
 
 @media screen and (max-width: 1366px){
@@ -151,7 +172,7 @@ nav .Navbar a:hover, nav .Navbar a.active{
         display: block;
     }
     #menu:hover{
-        transform: scale(1.1);
+        transform: scale(1.2);
     }
     nav .Navbar {
         position: absolute;
@@ -181,7 +202,7 @@ nav .Navbar a:hover, nav .Navbar a.active{
         display: block;
     }
     #menu:hover{
-        transform: scale(1.1);
+        transform: scale(1.2);
     }
     nav .Navbar {
         position: absolute;
