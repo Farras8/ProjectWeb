@@ -89,9 +89,7 @@ nav .Navbar a:hover, nav .Navbar a.active{
 .shoppingcart.active{
     right: 0;
 }
-.shoppingcart .productdetail{
-    margin-right: 9em;
-}
+
 .shoppingcart h3{
     font-size: 1.25em;
     font-weight: 500;
