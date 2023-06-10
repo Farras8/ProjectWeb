@@ -11,8 +11,8 @@ body{
     background-color: rgb(233, 237, 240);
 }
 .imglogo{
-    height: 70px;
-    width: 80px;
+    height: 60px;
+    width: 100px;
 }
 .cmenu{
     display: flex;
@@ -56,8 +56,9 @@ nav .Navbar  a{
 nav .Navbar a:hover, nav .Navbar a.active{
     font-weight: bold;
     color: rgb(228, 223, 223);
-    background-color: rgb(19, 18, 18);
-    padding: 4px;
+    background-color: rgb(102, 94, 94);
+    border-radius: 10%;
+    padding: 10px;
     cursor: pointer;
 }
 .shoppingcart{
@@ -79,6 +80,7 @@ nav .Navbar a:hover, nav .Navbar a.active{
     margin: 2rem 0;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 1.5rem;
     padding-bottom: 1rem;
     border-bottom: 1px dashed #666;
