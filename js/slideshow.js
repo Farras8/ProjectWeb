@@ -19,13 +19,16 @@ var swiper = new Swiper(".slide-content", {
         0: {
             slidesPerView: 1,
         },
-        520: {
+        650: {
             slidesPerView: 2,
         },
         768: {
-            slidesPerView: 3,
+            slidesPerView: 2,
         },
         1000: {
+          slidesPerView: 3,
+         },
+        1366: {
           slidesPerView: 4,
         },
     },

@@ -224,7 +224,7 @@ img{
     border-radius: 25px;
     background-color: #FFF;
     box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.2);
-    height: 400px;
+    height: 410px;
     width: 300px;
   }
   .Top-Content,
@@ -282,14 +282,7 @@ img{
     background-color: black;
   }
   
-  @media screen and (max-width: 520px) {
-    .slide-content{
-      margin: 0 10px;
-    }
-    .swiper-navBtn{
-      display: none;
-    }
-  }
+
   footer{
     padding: 1em;
     background-color:rgb(198, 201, 204 );
@@ -340,6 +333,15 @@ img{
         margin: 1.75rem;
         padding: 0.5rem;
     }
+}
+@media screen and (max-width: 650px){
+    .slide-content{
+        margin: 0 10px;
+      }
+      .swiper-navBtn{
+        display: none;
+      }
+    
 }
 @media screen and (max-width: 450px){
     html{
