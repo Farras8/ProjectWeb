@@ -183,79 +183,112 @@ img{
     transform: scale(0.9);
     transition: 0.3s;
   }
+
+  .star{
+    color: black;
+  }
   .review{
     padding: 3rem 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
   }
-    .review h2{
-        color:rgb(78, 76, 76) ;
-        font-size: 3em;
-        margin-top: 2em;
-        margin-bottom: 2em;
-    }
-  .review span{
+  .review .h2-1{
+    color:rgb(78, 76, 76) ;
+    font-size: 3em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+    .review .span1{
     background-color: #666;
     border-radius: 10%;
     padding: 10px;
     color: rgb(211, 211, 211);
+    }
+  
+  .slide-container{
+    max-width: 1300px;
+    width: 100%;
+    padding: 40px 0;
   }
-  .reviewbody{
-    display: flex;
-    margin: 2em 5%;
-    gap: 3em;
+  .slide-content{
+    margin: 0 40px;
+    overflow: hidden;
+    border-radius: 25px;
+    padding-bottom: 2em;
+    padding-right: 1em;
+    padding-left: 0.5em;
   }
-  .reviewcontent{
-    text-align: justify;
+  .reviewcard{
+    border-radius: 25px;
+    background-color: #FFF;
     box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.2);
-    padding: 2em;
+    height: 400px;
+    width: 300px;
+  }
+  .Top-Content,
+  .Bot-Content{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
   }
-  .image-content{
-    display: flex;
-    justify-content: space-between;
-    gap: 4em;
-    margin-bottom: 1em;
+  .Top-Content{
+      height: 200px;
   }
-  .imagec1{
-    height: 70px;
-    width: 70px;
+  .Bot-Content{
+      margin-top: 2em;
+  }
+  .card-img{
+    height: 60%;
+    width: 40%;
     border-radius: 50%;
   }
-  .detailcontent h4{
-    text-align: center;
-    font-size: 1.45em;
-    font-weight: 700;
-    line-height: 1.5em;
-    margin-bottom: 0.5em;
-  }
-  .stars{
-    display: flex;
-    gap: 0.2em;
-  }
-  .star{
-    color: black;
-  }
-  .message{
-    color: black;
-  }
-  .review-menu-name{
-    text-align: center;
-    margin-top: 2em;
-    margin-bottom: 1em;
-  }
-  .review-menu-name h3{
-    font-size: 1.35em;
+  .name{
+    font-size: 18px;
     font-weight: 500;
-    line-height: 1.5em;
+    color: #333;
   }
-  .reviewcontent p{
-    font-size: 1em;
-    font-weight: 400;
-    line-height: 1.6em;
+  .description{
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+  }
+  .swiper-navBtn{
+    color: rgb(0, 0, 0);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+  }
+  .swiper-navBtn:hover{
+    transform: scale(1.2);
+  }
+  .swiper-navBtn::before,
+  .swiper-navBtn::after{
+    font-size: 35px;
+  }
+  .swiper-button-next{
+    right: 0;
+  }
+  .swiper-button-prev{
+    left: 0;
+  }
+  .swiper-pagination-bullet{
+    background-color: black;
+    opacity: 1;
+  }
+  .swiper-pagination-bullet-active{
+    background-color: black;
+  }
+  
+  @media screen and (max-width: 520px) {
+    .slide-content{
+      margin: 0 10px;
+    }
+    .swiper-navBtn{
+      display: none;
+    }
   }
   footer{
     padding: 1em;
@@ -307,9 +340,6 @@ img{
         margin: 1.75rem;
         padding: 0.5rem;
     }
-    .reviewbody{
-        flex-direction: column;
-    }
 }
 @media screen and (max-width: 450px){
     html{
@@ -337,8 +367,5 @@ img{
         display: block;
         margin: 1.75rem;
         padding: 0.5rem;
-    }
-    .reviewbody{
-        flex-direction: column;
     }
 }

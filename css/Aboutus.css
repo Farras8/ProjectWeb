@@ -6,6 +6,7 @@
     outline: none;
     border: none;
 }
+
 body{
     color: black;
     background-color: rgb(233, 237, 240);
@@ -39,7 +40,7 @@ nav{
     top: 0;
     left: 0;
     right: 0;
-    z-index: 5000;
+    z-index: 9999;
 }
 nav .Navbar li {
     display: inline-block;
@@ -89,7 +90,6 @@ nav .Navbar a:hover, nav .Navbar a.active{
 .shoppingcart.active{
     right: 0;
 }
-
 .shoppingcart h3{
     font-size: 1.25em;
     font-weight: 500;
@@ -109,144 +109,113 @@ nav .Navbar a:hover, nav .Navbar a.active{
     font-size: 1.5em;
     font-weight: 500;
 }
-.contactus{
+.AboutUs{
     padding:  11rem 7% 1.4rem;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 3em;
+}
+.AboutUs h2 {
+    color: rgb(78, 76, 76);
+    padding-bottom: 1em;
+    font-size: 2em;
+}
+.contentABoutUs{
+    margin-top: 2em;
     display: flex;
-    justify-content: space-between;
-    gap: 6em;
-    margin-top: 4em;
+    justify-content: center;
+    gap: 4em;
 }
-.leftsidecontact{
-    max-width: 600px;
+.imageAboutus img{
+    width: 400px;
+    height: 450px;
 }
-.leftsidecontact h2{
-    text-align: center;
-    color:rgb(78, 76, 76) ;
-    font-size: 2.5em;
-    margin-bottom: 1em;
+.contentImage{
+    text-align: justify;
+    padding: 0 1rem;
 }
-.leftsidecontact p{
+ .contentImage p{
+    color:rgb(48, 44, 44);
+    font-size: 0.9em;
+    font-weight: 300;
+    line-height: 2em;
+}
+.contentImage p span{
+    font-weight: 500;
+    font-size: 1.15em;
+    color: #524d4d;
+}
+.founders{
     margin-bottom: 2em;
-    text-align: center;
 }
-.leftsidecontact h4{
-    text-align: center;
+ .founders h2{
+    color:rgb(78, 76, 76) ;
+    font-size: 2em;
+    margin-top: 4em;
     margin-bottom: 1em;
-    font-size: 1.25em;
-    font-weight: 600;
-    color: rgb(78, 76, 76) ;
 }
-.leftsidecontact .icon{
-   display: flex;
-   justify-content: center;
-   gap: 2em;
+ .founders .content {
+    display: flex;
+    justify-content: center;
+    gap: 4em;
+    flex-wrap: wrap;
 }
-#facebook, #instagram, #twitter{
-    color: black;
+.card{
+    height: 400px;
+    box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.2);
+    position: relative;
 }
-.leftsidecontact #facebook:hover{
-    transform: scale(1.2);
+.imageContent{
+    height: 400px;
+    width: 300px;
 }
-.leftsidecontact #instagram:hover{
-    transform: scale(1.2);
-}
-.leftsidecontact #twitter:hover{
-    transform: scale(1.2);
-}
-
-.form {
-    width: 500px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .form h2 {
+  .cardbody {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+    background-color: rgba(211, 204, 204, 0.6);
     text-align: center;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  .form label {
-    display: block;
-    margin-bottom: 5px;
-    color: #333;
-    font-weight: bold;
-  }
-  
-  .form input[type="text"],
-  .form input[type="email"],
-  .form input[type="tel"],
-  .form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
+    padding: 20px;
     border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 16px;
   }
-  
-  button[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 1em;
-    font-size: 1em;
+  .cardbody h4{
+    font-size: 1.25em;
+    font-weight: 400;
+  }  
+  .cardbody h6{
+    font-size: 0.75em;
+    font-weight: 300;
+  }
+  .cardbody ul li a img {
+    width: 30px;
+    height: 30px;
+    transition: all 0.3s ease-in-out;
+  }
+  .cardbody ul{
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+  }
+  .cardbody ul li{
+    list-style-type: none;
+  }
+  .cardbody ul li a:hover img {
+    transform: scale(1.2);
+  }
+  .card:hover .cardbody {
+    opacity: 1;
+    visibility: visible;
     cursor: pointer;
   }
   
-  button[type="submit"]:hover {
-    background-color: #008CBA;
-  }
-  
-  .form .error-message {
-    color: red;
-    display: none;
-    margin-top: 0.5em;
-    margin-bottom: 1.5em;
-  }
-  
-  .form textarea {
-    resize: vertical;
-    max-width: 100%;
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-    max-height: 200px;
-  }
-  .ourlocation{
-    max-width: 600px;
-  }
-  .ourlocation h2{
-    text-align: center;
-    color:rgb(78, 76, 76) ;
-    font-size: 2.5em;
-    margin-bottom: 1em;
-}
-.ourlocation p{
-    margin-bottom: 2em;
-    text-align: center;
-}
-  .location{
-    padding:  6rem 7% 1.4rem;
-    display: flex;
-    justify-content: space-between;
-    gap: 3em;
-  }
-  .location h2{
-    text-align: center;
-    color:rgb(78, 76, 76) ;
-    font-size: 2.5em;
-    margin-bottom: 1em;
-  }
-  .location iframe{
-    width: 500px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  .card:hover .imageContent {
+    filter: blur(5px);
   }
   footer{
     padding: 1em;
@@ -265,11 +234,9 @@ nav .Navbar a:hover, nav .Navbar a.active{
     html{
         font-size: 80%;
     }
-    .form{
+    .imageAboutus img{
         width: 400px;
-    }
-    .location iframe{
-        width: 400px;
+        height: 400px;
     }
 
 }
@@ -277,38 +244,14 @@ nav .Navbar a:hover, nav .Navbar a.active{
     html{
         font-size: 70%;
     }
-    .form{
-        width: 350px;
-    }
-    .location iframe{
-        width: 350px;
-    }
-}
-@media screen and (max-width: 1000px){
-    html{
-        font-size: 60%;
-    }
-    .form{
+    .imageAboutus img{
         width: 300px;
-    }
-    .location iframe{
-        width: 300px;
-    }
-}
-@media screen and (max-width: 820px){
-    html{
-        font-size: 50%;
-    }
-    .form{
-        width: 210px;
-    }
-    .location iframe{
-        width: 210px;
+        height: 300px;
     }
 }
 @media screen and (max-width: 768px){
     html{
-        font-size: 60%;
+        font-size: 70%;
     }
     #menu{
         display: block;
@@ -320,7 +263,7 @@ nav .Navbar a:hover, nav .Navbar a.active{
         position: absolute;
         top: 100%;
         right: -100%;
-        background-color: rgba(198, 201, 204, 0.7);
+        background-color: rgba(198, 201, 204, 0.9);
         width: 20rem;
         height: 100vh;
         transition: 0.5s;
@@ -334,19 +277,12 @@ nav .Navbar a:hover, nav .Navbar a.active{
         margin: 1.75rem;
         padding: 0.5rem;
     }
-    .contactus{
-        justify-content: center;
+    .AboutUs .contentABoutUs{
         flex-wrap: wrap;
     }
-    .form{
-        width: 300px;
-    }
-    .location{
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-    .location iframe{
-        width: 300px;
+    .imageAboutus img{
+        width: 350px;
+        height: 250px;
     }
 }
 @media screen and (max-width: 450px){
@@ -363,7 +299,7 @@ nav .Navbar a:hover, nav .Navbar a.active{
         position: absolute;
         top: 100%;
         right: -100%;
-        background-color: rgba(198, 201, 204, 0.7);
+        background-color: rgba(198, 201, 204, 0.9);
         width: 20rem;
         height: 100vh;
     }
@@ -376,16 +312,11 @@ nav .Navbar a:hover, nav .Navbar a.active{
         margin: 1.75rem;
         padding: 0.5rem;
     }
-    .contactus{
+    .AboutUs .contentABoutUs{
         flex-wrap: wrap;
     }
-    .form{
-        width: 250px;
-    }
-    .location{
-        flex-wrap: wrap;
-    }
-    .location iframe{
-        width: 250px;
+    .imageAboutus img{
+        width: 300px;
+        height: 200px;
     }
 }

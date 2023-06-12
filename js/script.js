@@ -107,4 +107,7 @@ emailInput.addEventListener('blur', validateEmail);
 phoneInput.addEventListener('blur', validatePhone);
 messageInput.addEventListener('blur', validateMessage);
 
+/* slide show */
+
+
 
