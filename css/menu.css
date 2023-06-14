@@ -221,7 +221,7 @@ img{
     border-radius: 25px;
     background-color: #FFF;
     box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.2);
-    height: 410px;
+    height: 380px;
     width: 300px;
   }
   .Top-Content,
@@ -257,17 +257,12 @@ img{
   footer{
     padding: 1em;
     background-color:rgb(198, 201, 204 );
+    margin-top: 1em;
+    text-align: center;
+    color:  #333;
+    font-size: 1.25em;
+    font-weight: 500;
   }
-
-.bottom-bar{
-  margin-top: 1em;
-  display: flex;
-  justify-content: center;
-  gap: 2em;
-  color:  #333;
-  font-size: 1.25em;
-  font-weight: 500;
-}
 @media screen and (max-width: 1366px){
     html{
         font-size: 80%;

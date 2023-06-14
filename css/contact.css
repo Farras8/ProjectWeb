@@ -251,16 +251,13 @@ nav .Navbar a:hover, nav .Navbar a.active{
   footer{
     padding: 1em;
     background-color:rgb(198, 201, 204 );
-  }
-  .bottom-bar{
     margin-top: 1em;
-    display: flex;
-    justify-content: center;
-    gap: 2em;
+    text-align: center;
     color:  #333;
     font-size: 1.25em;
     font-weight: 500;
   }
+
 @media screen and (max-width: 1366px){
     html{
         font-size: 80%;

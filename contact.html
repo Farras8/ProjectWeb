@@ -107,12 +107,28 @@
             width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
-    <footer>   
-        <div class="bottom-bar">                     
-            <p>&copy; 2023 Ivasta. All rights reserved.</p>                
-        </div>
+    <footer>                       
+         <p>&copy; 2023 Ivasta. All rights reserved.</p>                
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+    // Menghilangkan konten halaman saat tombol menu diklik
+    $(".Navbar ul li a").click(function(e) {
+        e.preventDefault(); // Mencegah perilaku default saat mengklik tautan
+        var targetUrl = $(this).attr("href"); // Mendapatkan URL target
 
+        // Animasi fadeOut untuk menghilangkan konten halaman saat ini
+        $("body").animate({ opacity: 0, marginTop: "100px" }, 500, function() {
+                // Setelah animasi fadeOut selesai, pindahkan ke URL target
+                window.location.href = targetUrl;
+            });
+        });
+    
+        // Animasi fadeIn saat halaman dimuat
+        $("body").animate({ opacity: 1, marginTop: "0" }, 500);
+});
+</script>
     <script>
         feather.replace()
     </script>
