@@ -1,5 +1,6 @@
 let menu = document.querySelector('#menu');
 let navbar = document.querySelector('.Navbar');
+
 menu.onclick = (event) => {
     event.preventDefault();
     navbar.classList.toggle('active');
@@ -29,6 +30,7 @@ document.addEventListener('click', (event) => {
 
 const form = document.getElementById('registration-form');
 const nameInput = document.getElementById('name');
+let nameValue;
 const emailInput = document.getElementById('email');
 const phoneInput = document.getElementById('phone');
 const messageInput = document.getElementById('message');
@@ -48,8 +50,9 @@ function hideError(input) {
   input.classList.remove('error');
 }
 
-function validateName() {
+function validateName() { 
   const name = nameInput.value.trim();
+  nameValue = nameInput.value;
   if (name === '') {
     showError(nameInput, 'Name is required');
   } else {
@@ -96,7 +99,11 @@ function validateForm(event) {
   validateMessage();
 
   if (!document.querySelectorAll('.error').length) {
-    form.reset();
+    // const confirmReset = confirm('Form submitted successfully! Do you want to reset the form?');
+    const confirmReset = confirm('Terima kasih ' +nameValue+ ', sudah mengirimkan masukkan');
+    if (confirmReset) {
+      form.reset();
+    }
   }
 }
 

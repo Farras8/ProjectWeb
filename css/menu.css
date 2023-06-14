@@ -210,20 +210,13 @@ img{
     padding: 10px;
     color: rgb(211, 211, 211);
     }
+    .cardbox{
+      display: flex;
+      gap: 2em;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   
-  .slide-container{
-    max-width: 1300px;
-    width: 100%;
-    padding: 40px 0;
-  }
-  .slide-content{
-    margin: 0 40px;
-    overflow: hidden;
-    border-radius: 25px;
-    padding-bottom: 2em;
-    padding-right: 1em;
-    padding-left: 0.5em;
-  }
   .reviewcard{
     border-radius: 25px;
     background-color: #FFF;
@@ -258,32 +251,6 @@ img{
     font-size: 14px;
     color: #707070;
     text-align: center;
-  }
-  .swiper-navBtn{
-    color: rgb(0, 0, 0);
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-  }
-  .swiper-navBtn:hover{
-    transform: scale(1.2);
-  }
-  .swiper-navBtn::before,
-  .swiper-navBtn::after{
-    font-size: 35px;
-  }
-  .swiper-button-next{
-    right: 0;
-  }
-  .swiper-button-prev{
-    left: 0;
-  }
-  .swiper-pagination-bullet{
-    background-color: black;
-    opacity: 1;
-  }
-  .swiper-pagination-bullet-active{
-    background-color: black;
   }
   
 
