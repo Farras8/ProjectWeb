@@ -99,10 +99,10 @@ function validateForm(event) {
   validateMessage();
 
   if (!document.querySelectorAll('.error').length) {
-    // const confirmReset = confirm('Form submitted successfully! Do you want to reset the form?');
-    const confirmReset = confirm('Terima kasih ' +nameValue+ ', sudah mengirimkan masukkan');
+    const confirmReset = confirm('Apakah anda yakin untuk mensubmit form ini?');
     if (confirmReset) {
       form.reset();
+      alert('Terima kasih ' + nameValue +' telah mengirimkan Pesan ini');
     }
   }
 }

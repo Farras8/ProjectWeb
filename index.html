@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;900&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="css/LP.css">
 </head>
 <body>
@@ -70,24 +71,18 @@
             </div>
         </div>
     </section>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-    $(document).ready(function() {
-        // Menghilangkan konten halaman saat tombol menu diklik
-        $(".Navbar ul li a").click(function(e) {
-            e.preventDefault(); // Mencegah perilaku default saat mengklik tautan
-            var targetUrl = $(this).attr("href"); // Mendapatkan URL target
+$(document).ready(function() {
     
-            // Animasi fadeOut untuk menghilangkan konten halaman saat ini
-            $("body").animate({ opacity: 0, marginTop: "100px" }, 500, function() {
-                // Setelah animasi fadeOut selesai, pindahkan ke URL target
+    $(".Navbar ul li a").click(function(e) {
+        e.preventDefault(); 
+        var targetUrl = $(this).attr("href");    
+        $("body").animate({ opacity: 0, marginTop: "100px" }, 500, function() {
                 window.location.href = targetUrl;
             });
         });
-    
-        // Animasi fadeIn saat halaman dimuat
         $("body").animate({ opacity: 1, marginTop: "0" }, 500);
-    });
+});
     </script>
     <script>
         feather.replace()

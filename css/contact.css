@@ -212,12 +212,10 @@ nav .Navbar a:hover, nav .Navbar a.active{
     resize: vertical;
     max-width: 100%;
     width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
     border-radius: 5px;
     border: 1px solid #ccc;
     font-size: 16px;
-    max-height: 200px;
+    max-height: 400px;
   }
   .ourlocation{
     max-width: 600px;

@@ -121,7 +121,7 @@ nav .Navbar a:hover, nav .Navbar a.active{
 .main .content{
     margin-top: 7em;
     padding: 4%;
-    max-width: 45rem;
+    max-width: 700px;
 }
 .main .content h1{
     font-size: 3.15em;
