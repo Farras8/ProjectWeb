@@ -75,8 +75,8 @@ function validatePhone() {
   const phone = phoneInput.value.trim();
   if (phone === '') {
     showError(phoneInput, 'Phone number is required');
-  } else if (!/^\+62\d*$/.test(phone)) {
-    showError(phoneInput, 'Phone number must start with +62 and contain only digits');
+  } else if (!/^\d*$/.test(phone)) {
+    showError(phoneInput, 'Phone number must contain only digits');
   } else {
     hideError(phoneInput);
   }

@@ -17,7 +17,7 @@ body{
 }
 .cmenu{
     display: flex;
-    gap: 2em;
+    gap: 2rem;
 }
 #shoppingcart{
     color: black;
@@ -91,11 +91,11 @@ nav .Navbar a:hover, nav .Navbar a.active{
     right: 0;
 }
 .shoppingcart h3{
-    font-size: 1.25em;
+    font-size: 1.25rem;
     font-weight: 500;
 }
 .shoppingcart .price{
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: 400;
 }
 .shoppingcart .trash{
@@ -106,7 +106,7 @@ nav .Navbar a:hover, nav .Navbar a.active{
 }
 .shoppingcart .totalprice{
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: 500;
 }
 .AboutUs{
@@ -117,14 +117,14 @@ nav .Navbar a:hover, nav .Navbar a.active{
 }
 .AboutUs h2 {
     color: rgb(78, 76, 76);
-    padding-bottom: 1em;
+    padding-bottom: 1rem;
     font-size: 2em;
 }
 .contentABoutUs{
-    margin-top: 2em;
+    margin-top: 2rem;
     display: flex;
     justify-content: center;
-    gap: 4em;
+    gap: 4rem;
 }
 .imageAboutus img{
     width: 400px;
@@ -223,7 +223,7 @@ nav .Navbar a:hover, nav .Navbar a.active{
     margin-top: 1em;
     text-align: center;
     color:  #333;
-    font-size: 1.25em;
+    font-size: 1.25rem;
     font-weight: 500;
   }
 @media screen and (max-width: 1366px){
