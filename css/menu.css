@@ -234,6 +234,9 @@ img{
   .Top-Content{
       height: 200px;
   }
+  .Top-Content h3{
+    font-size: 20px;
+  }
   .Bot-Content{
       margin-top: 2rem;
   }
@@ -243,7 +246,7 @@ img{
     border-radius: 50%;
   }
   .name{
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     color: #333;
   }
@@ -335,5 +338,25 @@ img{
         display: block;
         margin: 1.75rem;
         padding: 0.5rem;
+    }
+}
+@media screen and (max-width: 280px){
+    html{
+        font-size: 30%;
+    }
+    .menu{
+        padding:  16rem 7% 1.4rem;
+    }
+    .reviewcard{
+        height: 300px;
+        width: 250px;
+    }
+    .Bot-Content .name{
+        font-size: 12px;
+        margin-top: 0;
+    }
+    .Bot-Content .description{
+        font-size: 10px;
+        margin-top: 0.5rem;
     }
 }
