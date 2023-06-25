@@ -140,7 +140,7 @@ nav .Navbar a:hover, nav .Navbar a.active{
     
 .main .content p{
     font-size: 1.3rem;
-    margin-top: 1rem;
+    margin-top: 1em;
     text-align: justify;
     line-height: 1.3;
     font-weight: 300;
@@ -150,8 +150,8 @@ nav .Navbar a:hover, nav .Navbar a.active{
 }
 .main .content .buttonBuy {
     display: inline-block;
-    margin-top: 2rem;
-    padding: 1rem 2rem;
+    margin-top: 2em;
+    padding: 1rem 2em;
     font-size: 1.4rem;
     font-weight: 600;
     text-transform: uppercase;
