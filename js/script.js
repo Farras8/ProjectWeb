@@ -74,9 +74,9 @@ function validateEmail() {
 function validatePhone() {
   const phone = phoneInput.value.trim();
   if (phone === '') {
-    showError(phoneInput, 'Phone number is required');
-  } else if (!/^\d*$/.test(phone)) {
-    showError(phoneInput, 'Phone number must contain only digits');
+    showError(phoneInput, 'Phone number is requires');
+  } else if (!/^(\+?62)?\d+$/.test(phone)) {
+    showError(phoneInput, 'Invalid Phone Number');
   } else {
     hideError(phoneInput);
   }
@@ -99,10 +99,10 @@ function validateForm(event) {
   validateMessage();
 
   if (!document.querySelectorAll('.error').length) {
-    const confirmReset = confirm('Apakah anda yakin untuk mensubmit form ini?');
+    const confirmReset = confirm('Are you sure for submitting this form?');
     if (confirmReset) {
       form.reset();
-      alert('Terima kasih ' + nameValue +' telah mengirimkan Pesan ini');
+      alert('Thank You ' + nameValue +' for sending the message for us');
     }
   }
 }
